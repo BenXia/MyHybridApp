@@ -9,6 +9,7 @@
 #import "HomePageVC.h"
 #import "TestUIWebViewVC.h"
 #import "TestWKWebViewVC.h"
+#import "JsNativeAndLocalHtmlDemo-Swift.h"
 
 @interface HomePageVC ()
 
@@ -29,6 +30,11 @@
 - (IBAction)wkWebViewBtnClick:(UIButton *)sender {
     TestWKWebViewVC *wkWebTest = [[TestWKWebViewVC alloc] init];
     [self.navigationController pushViewController:wkWebTest animated:YES];
+}
+
+- (IBAction)wkWebViewPerformanceBtnClick:(id)sender {
+    TestWKWebViewPerformanceVC *performanceTestVC = [[TestWKWebViewPerformanceVC alloc] init];
+    [self.navigationController pushViewController:performanceTestVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
