@@ -147,7 +147,9 @@ private class JSTimingTool {
         view.addSubview(webview)
         
         //guard let url = URL(string: "https://www.baidu.com") else { return }
-        guard let url = URL(string: "https://apph5-tst.changingedu.com/apph5/benxia.html") else { return }
+//        guard let url = URL(string: "https://apph5-tst.changingedu.com/apph5/benxia.html") else { return }
+        guard let url = URL(string: "https://apph5-tst.changingedu.com/liveapph5/course_report?ts=1589174951822.286133&city_id=4&actid=20170828_z1_1_cVK&chid=1001224&invitor_id=679510072&type=from_push&share_code=dqlF5kfqMW2BH54deqgB7Aidid#/23159") else { return }
+        
         let request = URLRequest(url: url)
         webview.load(request)
     }
